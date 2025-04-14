@@ -1,0 +1,28 @@
+id: d22aa650-b93e-40bd-a9b5-4a008659c046
+name: spring-streaming-app
+timestamp: 2025-04-14T19:56:41.621387Z
+source: INTELLIJ
+username: risbergt
+fragments:
+  build-wrapper-maven:
+    name: build-wrapper-maven
+    git:
+      url: https://github.com/vmware-tanzu/application-accelerator-samples
+      subPath: fragments/build-wrapper-maven
+      ref: main
+accelerator:
+  name: spring-streaming-app
+  local: true
+options:
+  msgBrokerName: foo-broker
+  applicationRole: source
+  resultChannel: foo-result
+  resultChannelGroup: foo-result-group
+  includeBuildToolWrapper: true
+  sourceChannel: foo-source
+  groupId: com.example
+  artifactId: foo-source
+  packageName: com.example.stream
+  objectModelClassName: Foo
+  projectName: foo-source
+  sourceChannelGroup: foo-source-group
