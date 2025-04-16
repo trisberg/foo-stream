@@ -1,0 +1,8 @@
+1744805866204:app register --name foo-source --type source --uri docker:docker.io/risbergt514/foo-source:0.0.1-arm --bootVersion 3
+1744805871163:app register --name foo-proc --type processor --uri docker:docker.io/risbergt514/foo-proc:0.0.1-arm --bootVersion 3
+1744805875264:app register --name foo-sink --type sink --uri docker:docker.io/risbergt514/foo-sink:0.0.1-arm --bootVersion 3
+1744805879211:app list
+1744805916883:stream create --name foo --definition "foo-source | foo-proc | foo-sink"
+1744805949706:stream deploy --name foo
+1744806032442:stream list
+1744808795352:exit

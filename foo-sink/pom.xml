@@ -9,9 +9,9 @@
 		<relativePath/> <!-- lookup parent from repository -->
 	</parent>
 	<groupId>com.example</groupId>
-	<artifactId>streaming-app</artifactId>
+	<artifactId>foo-sink</artifactId>
 	<version>0.0.1</version>
-	<name>streaming-app</name>
+	<name>foo-sink</name>
 	<description>Template for create</description>
 	<properties>
 		<java.version>21</java.version>
