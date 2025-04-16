@@ -1,6 +1,6 @@
-id: 119b1909-f024-405d-b288-0fc41aaa1b5a
+id: d3f756e2-0941-4295-bc4c-7bb2ada0f449
 name: spring-streaming-app
-timestamp: 2025-04-14T20:01:32.017371Z
+timestamp: 2025-04-16T16:44:20.350542Z
 source: INTELLIJ
 username: risbergt
 fragments:
@@ -12,7 +12,10 @@ fragments:
       ref: main
 accelerator:
   name: spring-streaming-app
-  local: true
+  git:
+    url: https://github.com/vmware-tanzu/application-accelerator-samples
+    subPath: spring-streaming-app
+    ref: main
 options:
   msgBrokerName: foo-broker
   applicationRole: processor

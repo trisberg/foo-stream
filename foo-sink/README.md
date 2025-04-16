@@ -131,7 +131,7 @@ This will deploy the app based on the settings in the `manifest.yml` file.
 Find the route assigned to the app using this command:
 
 ```sh
-cf app streaming-app
+cf app foo-sink
 ```
 
 The route assigned will be listed under `routes:`.
@@ -141,7 +141,7 @@ The route assigned will be listed under `routes:`.
 To delete the app and remove the assigned route, run the following command:
 
 ```sh
-cf delete streaming-app -r
+cf delete foo-sink -r
 ```
 
 To delete the service, run this command:

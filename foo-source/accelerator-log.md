@@ -49,7 +49,7 @@
 ┃ ┃ ┃ ┃ ╺  Info Will replace [Foo->Foo]
 ┃ ┃ ┃ ┃ ┏ engine.transformations[1].validated.transformations[1].apply.transformations[1] (YTT)
 ┃ ┃ ┃ ┃ ┃ Debug Wrote values file with json content:   {"msgBrokerName":"foo-broker","resultChannel":"foo-result","applicationRole":"source","artifactVersion":"0.0.1-beta","resultChannelGroup":"foo-result-group","sourceChannel":"foo-source","groupId":"com.example","includeBuildToolWrapper":true,"artifactId":"foo-source","packageName":"com.example.stream","objectModelClassName":"Foo","projectName":"foo-source","sourceChannelGroup":"foo-source-group"}
-┃ ┃ ┃ ┗ ┗  Info Shelling out to YTT with args: [ytt, -f, /var/folders/sv/7g686rs906v38snwbz438xsr0000gq/T/ytt-input18304540333299147795, --data-values-file, /var/folders/sv/7g686rs906v38snwbz438xsr0000gq/T/accelerator-options15714364481624557147.json, --output-files, /var/folders/sv/7g686rs906v38snwbz438xsr0000gq/T/ytt-output6910531715678589198]
+┃ ┃ ┃ ┗ ┗  Info Shelling out to YTT with args: [ytt, -f, /var/folders/sv/7g686rs906v38snwbz438xsr0000gq/T/ytt-input1244058756599438921, --data-values-file, /var/folders/sv/7g686rs906v38snwbz438xsr0000gq/T/accelerator-options10914838512885081979.json, --output-files, /var/folders/sv/7g686rs906v38snwbz438xsr0000gq/T/ytt-output3175318843440840017]
 ┃ ┃ ┃ ┏ engine.transformations[1].validated.transformations[2] (IfElse)
 ┃ ┃ ┃ ┃ engine.transformations[1].validated.transformations[2].then (Exclude)
 ┃ ┃ ┃ ┃  Info Will exclude [**/FooProcessor.java, **/FooSink.java]

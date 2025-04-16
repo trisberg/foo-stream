@@ -1,6 +1,6 @@
-id: 2df5f371-adfd-455d-ac95-36513593ee24
+id: d9caf98f-b050-41ee-9ca9-820ef5f1b598
 name: spring-streaming-app
-timestamp: 2025-04-14T19:57:36.571281Z
+timestamp: 2025-04-16T17:52:51.869121Z
 source: INTELLIJ
 username: risbergt
 fragments:
@@ -12,7 +12,10 @@ fragments:
       ref: main
 accelerator:
   name: spring-streaming-app
-  local: true
+  git:
+    url: https://github.com/vmware-tanzu/application-accelerator-samples
+    subPath: spring-streaming-app
+    ref: main
 options:
   msgBrokerName: foo-broker
   applicationRole: sink
@@ -21,7 +24,7 @@ options:
   includeBuildToolWrapper: true
   sourceChannel: foo-source
   groupId: com.example
-  artifactId: streaming-app
+  artifactId: foo-sink
   packageName: com.example.stream
   objectModelClassName: Foo
   projectName: foo-sink

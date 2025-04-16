@@ -10,7 +10,7 @@
   "includeBuildToolWrapper" : true,
   "sourceChannel" : "foo-source",
   "groupId" : "com.example",
-  "artifactId" : "streaming-app",
+  "artifactId" : "foo-sink",
   "packageName" : "com.example.stream",
   "objectModelClassName" : "Foo",
   "projectName" : "foo-sink",
@@ -43,13 +43,13 @@
 ┃ ┃ ┃ ┏ engine.transformations[1].validated.transformations[0].apply (Chain)
 ┃ ┃ ┃ ┃  Info Running Chain(ReplaceSnippet, ReplaceSnippet)
 ┃ ┃ ┃ ┃ ╺  Info Will replace [<groupId>com.example</groupId>-><groupId>com.example...(truncated)]
-┃ ┃ ┃ ┗ ╺  Info Will replace [spring-streaming-app->streaming-app]
+┃ ┃ ┃ ┗ ╺  Info Will replace [spring-streaming-app->foo-sink]
 ┃ ┃ ┃ ┏ engine.transformations[1].validated.transformations[1].apply (Chain)
 ┃ ┃ ┃ ┃  Info Running Chain(ReplaceSnippet, YTT)
 ┃ ┃ ┃ ┃ ╺  Info Will replace [Foo->Foo]
 ┃ ┃ ┃ ┃ ┏ engine.transformations[1].validated.transformations[1].apply.transformations[1] (YTT)
-┃ ┃ ┃ ┃ ┃ Debug Wrote values file with json content:   {"msgBrokerName":"foo-broker","resultChannel":"foo-result","applicationRole":"sink","artifactVersion":"0.0.1-beta","resultChannelGroup":"foo-result-group","sourceChannel":"foo-source","groupId":"com.example","includeBuildToolWrapper":true,"artifactId":"streaming-app","packageName":"com.example.stream","objectModelClassName":"Foo","projectName":"foo-sink","sourceChannelGroup":"foo-source-group"}
-┃ ┃ ┃ ┗ ┗  Info Shelling out to YTT with args: [ytt, -f, /var/folders/sv/7g686rs906v38snwbz438xsr0000gq/T/ytt-input927779094616270743, --data-values-file, /var/folders/sv/7g686rs906v38snwbz438xsr0000gq/T/accelerator-options14602944546161582223.json, --output-files, /var/folders/sv/7g686rs906v38snwbz438xsr0000gq/T/ytt-output6112446166648998993]
+┃ ┃ ┃ ┃ ┃ Debug Wrote values file with json content:   {"msgBrokerName":"foo-broker","resultChannel":"foo-result","applicationRole":"sink","artifactVersion":"0.0.1-beta","resultChannelGroup":"foo-result-group","sourceChannel":"foo-source","groupId":"com.example","includeBuildToolWrapper":true,"artifactId":"foo-sink","packageName":"com.example.stream","objectModelClassName":"Foo","projectName":"foo-sink","sourceChannelGroup":"foo-source-group"}
+┃ ┃ ┃ ┗ ┗  Info Shelling out to YTT with args: [ytt, -f, /var/folders/sv/7g686rs906v38snwbz438xsr0000gq/T/ytt-input4537710814226783115, --data-values-file, /var/folders/sv/7g686rs906v38snwbz438xsr0000gq/T/accelerator-options15421697751561715696.json, --output-files, /var/folders/sv/7g686rs906v38snwbz438xsr0000gq/T/ytt-output3975115316927426853]
 ┃ ┃ ┃ ┏ engine.transformations[1].validated.transformations[2] (IfElse)
 ┃ ┃ ┃ ┗ null ()
 ┃ ┃ ┃ ┏ engine.transformations[1].validated.transformations[3] (IfElse)
@@ -98,7 +98,7 @@
 ┃ ┃ ┃ ┃ ┃ ┃ ┃ ┃ ┃ Debug Path 'src/main/java/com/example/stream//model/Foo.java' matched 'src/(?<sourceset>.*)/java/(?<currentpackage>.*/)stream(?<untouchedpath>.*)' with groups {sourceset=main, currentpackage=com/example/, untouchedpath=//model/Foo.java, g0=src/main/java/com/example/stream//model/Foo.java, g1=main, g2=com/example/, g3=//model/Foo.java} and was rewritten to 'src/main/java/com/example/stream///model/Foo.java'
 ┃ ┃ ┃ ┃ ┃ ┃ ┃ ┗ ┗ Debug Path 'src/main/java/com/example/stream//functions/FooSink.java' matched 'src/(?<sourceset>.*)/java/(?<currentpackage>.*/)stream(?<untouchedpath>.*)' with groups {sourceset=main, currentpackage=com/example/, untouchedpath=//functions/FooSink.java, g0=src/main/java/com/example/stream//functions/FooSink.java, g1=main, g2=com/example/, g3=//functions/FooSink.java} and was rewritten to 'src/main/java/com/example/stream///functions/FooSink.java'
 ┃ ┃ ┃ ┃ ┃ ┃ ┃ ┏ engine.transformations[1].validated.transformations[5].in.transformations[2].in.transformations[1].apply (ReplaceText)
-┃ ┃ ┃ ┃ ┃ ┃ ┃ ┗  Info Will replace [spring-streaming-app->streaming-app, foo-broker->foo-broker]
+┃ ┃ ┃ ┃ ┃ ┃ ┃ ┗  Info Will replace [spring-streaming-app->foo-sink, foo-broker->foo-broker]
 ┃ ┃ ┃ ┃ ┃ ┃ ┃ ┏ engine.transformations[1].validated.transformations[5].in.transformations[2].in.transformations[2] (Merge)
 ┃ ┃ ┃ ┃ ┃ ┃ ┃ ┃  Info Running Merge(Include, InvokeFragment)
 ┃ ┃ ┃ ┃ ┃ ┃ ┃ ┃ ┏ engine.transformations[1].validated.transformations[5].in.transformations[2].in.transformations[2].sources[0] (Include)
